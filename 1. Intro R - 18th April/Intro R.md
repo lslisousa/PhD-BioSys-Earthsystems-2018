@@ -1,4 +1,4 @@
-## Practical Exercise - EM Algorithm
+## Intro R - Guided Exercises
 
 **Basic Operations**
 
@@ -11,41 +11,53 @@ w<-c(1,-1,2,-2)
 ```r
 w
 ```
-
-\\
-  \texttt{w}
-\item Obtain a description of \texttt{w} by using function
-  \texttt{str()}.\\
-  \texttt{str(w)}
-\item Create vector \texttt{w+1} and print it in the \texttt{R} console.\\
-  \texttt{x<-w+1; x}
-\item Create vector $(0,1,5,10,15,\ldots,75)$ by using functions
-  \texttt{c()} and \texttt{seq()}.\\
-  \texttt{s<-seq(5,75,by=5)}\\
-  \texttt{j<-c(0,1,s);j}
-\item Construct an alphanumeric vector with the labels "Patient", "Entry number"\, and "Disease", with separator ":"\, and dimension 10.\\  \texttt{S<-paste("Patient","Entry number","Disease",sep=":",1:10)}
-\item Consider $x=4$ (\texttt{x<-4}), and check the following conditions:\\
-a) $x>23$
-
-\hspace{0.5cm}\texttt{a <- x>23}
-
+* Obtain a description of \texttt{w} by using function \texttt{str()}.
+```r
+str(w)
+```
+* Create vector \texttt{w+1} and print it in the \texttt{R} console.
+```r
+x<-w+1; x
+```
+* Create vector (0,1,5,10,15,...,75) by using functions \texttt{c()} and \texttt{seq()}.
+```r
+s<-seq(5,75,by=5)
+j<-c(0,1,s);j
+```
+* Construct an alphanumeric vector with the labels "Patient", "Entry number"\, and "Disease", with separator ":", and dimension 10.
+```r
+S<-paste("Patient","Entry number","Disease",sep=":",1:10)
+```
+* Consider x=4 (\texttt{x<-4}), and check the following conditions:
+a) x>23
+```r
+a <- x>23
+```
 b) $x\in[-1,10]$
-
-\hspace{0.5cm}\texttt{b <- x>=-1 \& x<=10}
-
+```r
+b <- x>=-1 \& x<=10
+```
 c) $x=3$
-
-\hspace{0.5cm}\texttt{c<-x==3}
-
+```r
+c<-x==3
+```
 d) $x\leq 45$
-
-\hspace{0.5cm}\texttt{d <- x<=45}
-\newpage Indicate the logical conditions:
-\begin{enumerate}
-  \item a) $\wedge$ b)\\ \texttt{a\&b}
-  \item b) $\vee$ c)\\ \texttt{b|c}
-  \item d) $\wedge$ b)\\ \texttt{d\&b}
-\end{enumerate}
+```r
+d <- x<=45
+```
+* Indicate the logical conditions:
+i. a) $\wedge$ b)
+```r
+a&b
+```
+ii. b) $\vee$ c)
+```r
+b|c
+```
+iii. d) $\wedge$ b)
+```r
+d&b
+```
 
 \item[]\hspace{-0.7cm}{\bf Vectors, Matrices and Data Frames}
 
