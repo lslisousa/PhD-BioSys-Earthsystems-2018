@@ -29,56 +29,67 @@ S<-paste("Patient","Entry number","Disease",sep=":",1:10)
 ```
 * Consider x=4 (\texttt{x<-4}), and check the following conditions:
 
-** x>23
+- (a) x>23
 ```r
 a <- x>23
 ```
-b) $x\in[-1,10]$
+- (b) $x\in[-1,10]$
 ```r
-b <- x>=-1 \& x<=10
+b <- x>=-1 & x<=10
 ```
-c) $x=3$
+- (c) $x=3$
 ```r
 c<-x==3
 ```
-d) $x\leq 45$
+- (d) $x\leq 45$
 ```r
 d <- x<=45
 ```
 * Indicate the logical conditions:
 
-** a) $\wedge$ b)
+- (a) $\wedge$ (b)
 ```r
 a&b
 ```
-ii. b) $\vee$ c)
+- (b) $\vee$ (c)
 ```r
 b|c
 ```
-iii. d) $\wedge$ b)
+- (d) $\wedge$ (b)
 ```r
 d&b
 ```
 
-\item[]\hspace{-0.7cm}{\bf Vectors, Matrices and Data Frames}
+** Vectors, Matrices and Data Frames**
 
-\item Create a numeric vector, a \emph{string} (character) vector and a logical vector:\\
-\texttt{num.vec <- c(3,4,2,6,20)\\
-char.vec <- c("koala","kangaroo","monkey")\\
-logic.vec <- c(F,F,T,T)}
-  \item Create the vector \textbf{y}=(0, 4, 2, 1, 0, 4, 0, 3, 0, 3, 3, 3, 4, 4, 2, 2, 0) and print it in the \texttt{R} console.\\
-\texttt{y<-c(0, 4, 2, 1, 0, 4, 0, 3, 0, 3, 3, 3, 4, 4, 2, 2, 0)}\\
-\texttt{y}
-\begin{enumerate}
-  \item Search for elements of \textbf{y} which are less or equal than 3.\\
-\texttt{y[y<=3]}
-  \item Search for elements of \textbf{y} equal to 0.\\
-\texttt{y[y==0]}
-  \item Search for components different form 0.\\
-  \texttt{y[y!=0]}
-  \item How many elements of \textbf{y} are lower than 3?\\
-\texttt{length(y[y<3])}
-\end{enumerate}
+* Create a numeric vector, a \emph{string} (character) vector and a logical vector:
+```r
+num.vec <- c(3,4,2,6,20)
+char.vec <- c("koala","kangaroo","monkey")
+logic.vec <- c(F,F,T,T)
+```
+* Create the vector \textbf{y}=(0, 4, 2, 1, 0, 4, 0, 3, 0, 3, 3, 3, 4, 4, 2, 2, 0) and print it in the \texttt{R} console.
+```r
+y<-c(0, 4, 2, 1, 0, 4, 0, 3, 0, 3, 3, 3, 4, 4, 2, 2, 0)
+y
+```
+- Search for elements of \textbf{y} which are less or equal than 3.
+```r
+y[y<=3]
+```
+- Search for elements of \textbf{y} equal to 0.
+```r
+y[y<==0]
+```
+- Search for components different form 0.
+```r
+y[y!=0]
+```
+- How many elements of \textbf{y} are lower than 3?
+```r
+length(y[y<3])
+```
+
 
   \item Consider the following vector: (12,14,35,7,6,12,5,22,7,17,9,11).
   \begin{enumerate}
