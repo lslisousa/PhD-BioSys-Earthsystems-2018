@@ -29,7 +29,7 @@ j<-c(0,1,s);j
 S<-paste("Patient","Entry number","Disease",sep=":",1:10)
 ```
 * Consider x=4 (\texttt{x<-4}), and check the following conditions:
-a) x>23
+** x>23
 ```r
 a <- x>23
 ```
@@ -46,6 +46,7 @@ d) $x\leq 45$
 d <- x<=45
 ```
 * Indicate the logical conditions:
+
 i. a) $\wedge$ b)
 ```r
 a&b
