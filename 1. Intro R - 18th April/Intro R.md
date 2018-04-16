@@ -6,7 +6,6 @@
 ```r
 w<-c(1,-1,2,-2)
 ```
-
 * Print that vector in the \texttt{R} console.
 ```r
 w
@@ -24,11 +23,12 @@ x<-w+1; x
 s<-seq(5,75,by=5)
 j<-c(0,1,s);j
 ```
-* Construct an alphanumeric vector with the labels "Patient", "Entry number"\, and "Disease", with separator ":", and dimension 10.
+* Construct an alphanumeric vector with the labels "Patient", "Entry number", and "Disease", with separator ":", and dimension 10.
 ```r
 S<-paste("Patient","Entry number","Disease",sep=":",1:10)
 ```
 * Consider x=4 (\texttt{x<-4}), and check the following conditions:
+
 ** x>23
 ```r
 a <- x>23
@@ -47,7 +47,7 @@ d <- x<=45
 ```
 * Indicate the logical conditions:
 
-i. a) $\wedge$ b)
+** a) $\wedge$ b)
 ```r
 a&b
 ```
