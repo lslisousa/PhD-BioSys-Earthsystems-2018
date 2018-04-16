@@ -29,33 +29,33 @@ S<-paste("Patient","Entry number","Disease",sep=":",1:10)
 ```
 * Consider x=4 (\texttt{x<-4}), and check the following conditions:
 
-- (a) x>23
+(a) x>23
 ```r
 a <- x>23
 ```
-- (b) $x\in[-1,10]$
+(b) $x\in[-1,10]$
 ```r
 b <- x>=-1 & x<=10
 ```
-- (c) $x=3$
+(c) $x=3$
 ```r
 c<-x==3
 ```
-- (d) $x\leq 45$
+(d) $x\leq 45$
 ```r
 d <- x<=45
 ```
 * Indicate the logical conditions:
 
-- (a) $\wedge$ (b)
+(a) $\wedge$ (b)
 ```r
 a&b
 ```
-- (b) $\vee$ (c)
+(b) $\vee$ (c)
 ```r
 b|c
 ```
-- (d) $\wedge$ (b)
+(d) $\wedge$ (b)
 ```r
 d&b
 ```
